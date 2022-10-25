@@ -1,0 +1,17 @@
+.total-month {
+display: flex;
+flex-direction: column;
+padding: 0 0 5px 0;
+border-bottom: 1px solid #999999;
+}
+
+.total-month .month-name {
+color: #999999;
+line-height: 16px;
+}
+
+.total-month .month-totl {
+text-align: right;
+color: #009900;
+line-height: 16px;
+}

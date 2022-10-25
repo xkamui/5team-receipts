@@ -1,0 +1,40 @@
+#receipts {
+width: 75%;
+padding: 0 10px;
+}
+
+#receipts h2 {
+font-size: 16px;
+font-weight: bold;
+}
+
+#receipts table {
+width: 100%;
+border-collapse: collapse;
+}
+
+#receipts table thead tr th {
+border-bottom: 1px solid #999999;
+}
+
+#receipts table tbody tr td {
+width: auto;
+padding: 5px;
+}
+
+#receipts table tbody tr:nth-child(odd) td {
+background: #f5f5f5;
+}
+
+#receipts table tbody tr td.date-receipt {
+width: 100px;
+}
+
+#receipts table tbody tr td.acts-receipt {
+width: 100px;
+}
+
+#receipts table tbody tr td.amnt-receipt {
+width: 100px;
+white-space: nowrap;
+}
