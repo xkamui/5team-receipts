@@ -6,7 +6,7 @@ function ReceiptRow(receipt) {
     <tr>
       <td className="date-receipt">{receipt.receipt.stamp}</td>
       <td>{receipt.receipt.title}</td>
-      <td className="amnt-receipt">{receipt.receipt.amount} €</td>
+      <td className="amnt-receipt">{new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(receipt.receipt.amount)}</td>
       <td className="acts-receipt">
         <ListActions uid={receipt.receipt.id} />
       </td>
