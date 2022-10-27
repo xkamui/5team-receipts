@@ -1,14 +1,12 @@
-import '../assets/styles/listActions.css'
+import "../assets/styles/listActions.css";
 
-function ListActions(){
-
-    return (
-        <div className="actions">
-            <button>[edit]</button>
-            <button>[del.]</button>
-        </div>
-    );
-
+function ListActions(uid) {
+  return (
+    <div className="actions">
+      <button>[edit ({uid.uid})]</button>
+      <button>[del. ({uid.uid})]</button>
+    </div>
+  );
 }
 
 export default ListActions;

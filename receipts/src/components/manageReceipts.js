@@ -1,16 +1,14 @@
-import '../assets/styles/manageReceipts.css'
-import ListReceipts from './listReceipts';
-import ListTotalMonth from './listTotalMonth';
+import ListReceipts from "./listReceipts";
+import ListTotalMonth from "./listTotalMonth";
+import "../assets/styles/manageReceipts.css";
 
-function ManageReceipts(){
-
-    return (
-        <section id="receipts-content">
-            <ListReceipts />
-            <ListTotalMonth />
-        </section>
-    );
-
+function ManageReceipts() {
+  return (
+    <section id="receipts-content">
+      <ListReceipts />
+      <ListTotalMonth />
+    </section>
+  );
 }
 
 export default ManageReceipts;
