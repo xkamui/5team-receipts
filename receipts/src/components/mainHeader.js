@@ -6,9 +6,8 @@ import { Context } from "../App";
 function MainHeader() {
   const receipts = useContext(Context);
   const totalReceipts = receipts?.reduce((sum, receipt) => {
-    return sum + parseFloat(receipt.amount)
-  }, 0)
-  console.log(totalReceipts)
+    return sum + parseFloat(receipt.amount);
+  }, 0);
 
   return (
     <header>
@@ -19,7 +18,13 @@ function MainHeader() {
         <h1>Manage your receipts</h1>
       </div>
       <div className="header-total">
-        Total : <span className="price-total">{new Intl.NumberFormat('fr-FR', { style: 'currency', currency: 'EUR' }).format(totalReceipts)}</span>
+        Total :{" "}
+        <span className="price-total">
+          {new Intl.NumberFormat("fr-FR", {
+            style: "currency",
+            currency: "EUR",
+          }).format(totalReceipts)}
+        </span>
       </div>
     </header>
   );
