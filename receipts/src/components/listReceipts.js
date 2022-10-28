@@ -20,8 +20,8 @@ function ListReceipts() {
           </tr>
         </thead>
         <tbody>
-          {receipts?.length
-            ? receipts.map((receipt) => (
+          {receipts.allReceipts?.length
+            ? receipts.allReceipts.map((receipt) => (
                 <ReceiptRow key={receipt.id} receipt={receipt} />
               ))
             : ""}

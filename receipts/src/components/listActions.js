@@ -16,7 +16,7 @@ function ListActions(uid) {
   
       fetch(fetchAllUrl)
         .then((response) => response.json())
-        .then((data) => receipts(data));
+        .then((data) => receipts.setAllReceipts(data));
     }
   }
 

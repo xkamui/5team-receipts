@@ -18,7 +18,7 @@ function App() {
 
   return (
     <div className="App">
-      <Context.Provider value={allReceipts}>
+      <Context.Provider value={{allReceipts, setAllReceipts}}>
         <MainHeader />
         <ManageReceipts />
       </Context.Provider>
